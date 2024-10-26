@@ -7,7 +7,7 @@ __locations = None
 __data_columns = None
 __model = None
 
-def get_estimated_price(location, sqft, bhk, bath):
+def get_estimated_price(location, sqft, bath, bhk):
     
     try:
         loc_index = __data_columns.index(location.lower())
