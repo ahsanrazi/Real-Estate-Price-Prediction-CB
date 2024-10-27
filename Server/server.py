@@ -1,7 +1,9 @@
 from flask import Flask, request, jsonify
+from flask_cors import CORS
 import util
 
 app = Flask(__name__)
+CORS(app)
 
 # Routine that return all the locations from json file
 @app.route('/get_location_names', methods=['GET'])
